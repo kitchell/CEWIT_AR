@@ -3,7 +3,7 @@
 <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.8/aframe/build/aframe-ar.js"></script>
   <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs>
+    <a-scene embedded arjs="debugUIEnabled: false">
         <a-assets>        <!--   assets (3d models, sound etc.) for preloading --> 
 
         <!--     3d models      -->
@@ -11,7 +11,7 @@
         
       </a-assets>
       <a-marker preset="hiro">
-          <a-image id="rfimage" src="#rf"></a-image>
+          <a-image id="rfimage" src="#rf" position="0 .5 0"></a-image>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
